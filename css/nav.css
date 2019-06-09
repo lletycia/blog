@@ -1,0 +1,82 @@
+/*Navbar*/
+
+.navbar {
+    background: #fff;
+    min-height: 200px;
+    border-bottom: 6px solid #ee1221;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Indie Flower', cursive;
+    font-size: 3em;
+    font-size: 700;
+    color: #ee1221;
+    cursor: pointer;
+}
+
+.menu {
+    width: 90%;
+    background: linear-gradient(-90deg, transparent 5%, #fff), url(../images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 1em;
+    max-height: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+}
+
+.menu.toggle {
+    max-height: 300px;
+    transform: scaleY(1);
+}
+
+.menu.toggle li {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.menu li {
+    padding: 1em 0; 
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 1s;
+    opacity: 0;
+}
+
+.menu li a {
+    font-size: 1em;
+    background: #ee1221;
+    padding: .5em;
+    color: #fff;
+}
+
+.menu li a:hover {
+   background: #f03340;
+}
+
+.navbar i {
+    background: transparent;
+    border: 2px solid #ee1221;
+    border-radius: 5px;
+    padding: .5em 1em;
+    color: #ee1221; 
+    font-size: 1.1em;
+    font-weight: 600;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.navbar i.toggle {
+    background: #ee1221;
+    color: #fff;
+}

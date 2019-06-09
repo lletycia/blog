@@ -1,7 +1,7 @@
 let hamburger = document.querySelector(".navbar i");
 let menu = document.querySelector(".menu");
-let navBar = document.querySelector("#navbar");
-let sect = document.querySelector("#navbar li");
+let navBar = document.querySelector("#sidebar");
+let sect = document.querySelector("#sidebar li");
 
 function openMenu(e) {
     menu.classList.toggle("toggle");
